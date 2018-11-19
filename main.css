@@ -108,29 +108,37 @@ h1{
 li {
   float:left;
   margin: 7px;
+  list-style-type: none;
+  text-transform: capitalize;
+
 }
 
 
 li:hover {
     background-color: #1117;
 }
-
-
-.mewBox {
-  margin: 0px;
-  padding: 20px;
-  width: 20%;
-  height: 200px;
-  border: 2px dashed black;
-  position: absolute;
-  left: 10%;
-  top: 35%;
-  color: red;
-  background-color: white;
-  display: none;
+ul {
+  text-align: left;
+  padding: 0%;
+  line-height: 25px;
 }
 
-.bulbBox {
+
+#mewBox {
+  margin: 0px;
+  padding: 3px;
+  width: 30%;
+  height: 30vh;
+  border: 2px dashed black;
+  position: absolute;
+  left: 30%;
+  top: 55%;
+  color: red;
+  background-color: white;
+  visibility: hidden;
+}
+/*
+#bulbBox {
   margin: 0px;
   padding: 20px;
   width: 20%;
@@ -141,10 +149,10 @@ li:hover {
   top: 35%;
   color: red;
   background-color: white;
-  display: none;
-}
-
-.squirtBox {
+  visibility: hidden;
+} */
+/*
+#squirtBox {
   margin: 0px;
   padding: 20px;
   width: 20%;
@@ -155,7 +163,44 @@ li:hover {
   top: 35%;
   color: red;
   background-color: white;
-  display: none;
+  visibility: hidden;
+} */
+
+.aboutMe {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  bottom: 2%;
+  font-size: 24px;
+  font-family: "Courier New" , Courier, monospace;
+  text-align: center;
+  color:white;
+  background: red;
+  /* height: 10vh; */
+  display: block;
+  width: 98%;
+  border: 3px solid black;
+  overflow: hidden;
+}
+
+p {
+  color: white;
+  margin: 10px;
+  padding: 30px;
+  border: 3px solid white;
+  text-align: left;
+
+}
+
+.trainerImg {
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  /* transform: translate(-50%, -50%); */
+  left: 70%;
+  /* position: fixed; */
+  /* animation: fadeIn 3s; */
+
 }
 
 footer {
