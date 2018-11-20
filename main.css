@@ -12,7 +12,7 @@ body{
 #navbar {
   margin: 0px;
   padding: 3px;
-  position: relative;
+  position: sticky;
   top: 0%;
   font-size: 24px;
   font-family: "Courier New" , Courier, monospace;
@@ -24,6 +24,11 @@ body{
   width: 99%;
   border: 3px solid black;
   overflow: hidden;
+  z-index: 1;
+}
+
+a {
+  color: white;
 }
 
 div {
@@ -51,9 +56,9 @@ div {
  /* margin: 0;
  position: absolute;
  top: 95%; */
- left: 60%;
+ left: 65%;
  /* transform: translate(-50%, -50%); */
- width: 40%;
+ width: 35%;
 
 }
 
@@ -90,6 +95,7 @@ div {
   padding: 0px;
     width: 100%;
     top: 15%;
+    z-index: 15;
 
 }
 
@@ -98,11 +104,12 @@ h1{
   font-size: 30px;
   font-family:monospace;
   text-align: center;
-  z-index: -1; position:absolute;
+  /* z-index: -1; */
+  /* position: inherit; */
   margin: 0px;
   padding: 0px;
-    width: 90%;
-    top: 70%;
+    width: 100%;
+    bottom: 5%;
 }
 
 li {
@@ -130,41 +137,24 @@ ul {
   width: 30%;
   height: 30vh;
   border: 2px dashed black;
-  position: absolute;
+  position: fixed;
   left: 30%;
-  top: 55%;
+  top:25%;
   color: red;
   background-color: white;
   visibility: hidden;
 }
-/*
-#bulbBox {
-  margin: 0px;
-  padding: 20px;
-  width: 20%;
-  height: 200px;
-  border: 2px dashed black;
-  position: absolute;
-  left: 35%;
-  top: 35%;
-  color: red;
-  background-color: white;
-  visibility: hidden;
-} */
-/*
-#squirtBox {
-  margin: 0px;
-  padding: 20px;
-  width: 20%;
-  height: 200px;
-  border: 2px dashed black;
-  position: absolute;
-  left: 55%;
-  top: 35%;
-  color: red;
-  background-color: white;
-  visibility: hidden;
-} */
+
+
+.profilePic{
+  width: 100%;
+  top: 30%;
+  /* top: 0%; */
+  /* position: absolute; */
+  /* left: 0%; */
+  /* transform: translate(-50,-50); */
+  z-index:1;
+}
 
 .aboutMe {
   margin: 0px;
@@ -188,22 +178,82 @@ p {
   margin: 10px;
   padding: 30px;
   border: 3px solid white;
-  text-align: left;
-
+  text-align: center;
+   /* float: left;  */
 }
 
-.trainerImg {
+img {
+  width: 100%;
+   transform: translate(-50,-50);
+  z-index:1;
+}
+
+#p1 {
+  color: white;
+  margin: 10px;
+  padding: 30px;
+  border: 3px solid white;
+  text-align: center;
+   /* float: right;  */
+}
+
+.border {
+  border: 3px solid white;
   margin: 0px;
   padding: 0px;
-  width: 50%;
-  /* transform: translate(-50%, -50%); */
-  left: 70%;
-  /* position: fixed; */
-  /* animation: fadeIn 3s; */
+  width: 100%;
 
 }
 
-footer {
+.trainerImg1 {
+  margin: 0px;
+  padding: 0px;
+  width: 15%;
+  top: 0%;
+  /* transform: translate(-50%, -50%); */
+  float: left;
+  position: sticky;
+  /* animation: fadeIn 3s; */
+  z-index: 2;
+
+}
+
+.trainer2Img {
+  margin: 0px;
+  padding: 0px;
+  width: 25%;
+  top: 0%;
+  /* transform: translate(-50%, -50%); */
+  float: right;
+  position: sticky;
+  /* animation: fadeIn 3s; */
+  z-index: 2;
+}
+
+.youReady{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  /* transform: translate(-50%, -50%); */
+  position: absolute;
+  z-index: 1;
+}
+
+h3 {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  top: 0%;
+  position: absolute;
+  color: white;
+  font-size: 52px;
+  font-family: "Courier New" , Courier, monospace;
+  z-index: 5;
+}
+
+h2, footer {
   margin: 0px;
   padding: 3px;
   position: relative;
