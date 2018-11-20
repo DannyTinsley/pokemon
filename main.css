@@ -143,6 +143,7 @@ ul {
   color: red;
   background-color: white;
   visibility: hidden;
+  z-index: 25;
 }
 
 
