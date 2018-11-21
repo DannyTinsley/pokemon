@@ -1,7 +1,8 @@
-@keyframes fadeIn {
+@-webkit-keyframes fadeIn {
   0%   { opacity: 0; }
-100% { opacity: 1; }
+  100% { opacity: 1; }
 }
+
 
 body{
     margin: 20px;
@@ -24,6 +25,18 @@ body{
   width: 99%;
   border: 3px solid black;
   overflow: hidden;
+  z-index: 1;
+}
+
+#darkSoulsHomeButton {
+  animation: fadeIn delay 8s;
+  animation-delay: 8s;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  top: 10%;
+  left: 50%;
+  position: absolute;
   z-index: 1;
 }
 
@@ -213,7 +226,7 @@ img {
   top: 0%;
   /* transform: translate(-50%, -50%); */
   float: left;
-  position: sticky;
+  position: relative;
   /* animation: fadeIn 3s; */
   z-index: 2;
 
@@ -226,7 +239,7 @@ img {
   top: 0%;
   /* transform: translate(-50%, -50%); */
   float: right;
-  position: sticky;
+  position: relative;
   /* animation: fadeIn 3s; */
   z-index: 2;
 }
@@ -237,9 +250,30 @@ img {
   width: 100%;
   top: 0%;
   left: 0%;
-  /* transform: translate(-50%, -50%); */
+  position: absolute;
+  /* z-index: 1; */
+}
+
+.mewFly {
+  animation-duration: 1s;
+  animation-delay: 4s;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  top: 0%;
+  left: 0%;
   position: absolute;
   z-index: 1;
+}
+
+.youDied {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  /* z-index: -1; */
 }
 
 h3 {

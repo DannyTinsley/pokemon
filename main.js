@@ -99,7 +99,7 @@ class Trainer {
 
 
 function mewStats (){
-  axios.get ("http://fizal.me/pokeapi/api/v2/name/mew.json")
+  axios.get ("https://fizal.me/pokeapi/api/v2/name/mew.json")
   .then(function (response) {
     console.log(response.data);
     console.log(response.data.abilities[0].ability.name);
@@ -118,7 +118,7 @@ function mewStats (){
 
 
 function bulbStats (){
-  axios.get ("http://fizal.me/pokeapi/api/v2/name/bulbasaur.json")
+  axios.get ("https://fizal.me/pokeapi/api/v2/name/bulbasaur.json")
   .then(function (response) {
     console.log(response.data);
     console.log(response.data.abilities[0].ability.name);
@@ -145,7 +145,7 @@ function appear2() {
 
 
 function squirtStats (){
-  axios.get ("http://fizal.me/pokeapi/api/v2/name/squirtle.json")
+  axios.get ("https://fizal.me/pokeapi/api/v2/name/squirtle.json")
   .then(function (response) {
     console.log(response.data);
     console.log(response.data.abilities[0].ability.name);
